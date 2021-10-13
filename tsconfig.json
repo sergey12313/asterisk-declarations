@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "noImplicitAny": true,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "lib": [
+            "esnext"
+        ],
+        "moduleResolution": "node",
+        "types": [],
+        "strict": true
+    },
+    "include": [
+        "**/*.d.ts"
+      ]
+
+}

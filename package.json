@@ -1,0 +1,21 @@
+{
+  "name": "asterisk-declarations",
+  "version": "0.0.1",
+  "keywords": [
+    "asterisk",
+    "lua",
+    "typescript-to-lua"
+  ],
+  "description": "Typescript declarations for asterisk dialplan lua api.",
+  "main": "declarations/index.d.ts",
+  "author": {
+    "name": "Sergey Razuvaev",
+    "email": "sergey12313@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "typescript": "^4.4.4"
+  }
+}
