@@ -1,3 +1,4 @@
+/** @noSelfInFile */
 type CallerIdDataTypes = "name" | "num" | "all" | "ANI" | "DNIS" | "RDNIS";
 
 interface CalleridMethods {
