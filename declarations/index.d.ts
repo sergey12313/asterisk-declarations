@@ -20,6 +20,11 @@ declare namespace app {
   export const noop: (str: string) => void;
   export const MP3Player: (str: string) => void;
   export const queue: (str: string) => void;
+  export const SayDigits: (num: number,) => void;
+  export const SayNumber: (num: number, gender: 'f' | 'm' | 'c') => void;
+  export const SayAlpha: (str: string) => void;
+  export const SayPhonetic: (str: string) => void;
+
 }
 
 type ExtensionType = {
