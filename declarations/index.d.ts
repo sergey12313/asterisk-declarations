@@ -1,5 +1,6 @@
 /** @noSelfInFile */
 type CallerIdDataTypes = "name" | "num" | "all" | "ANI" | "DNIS" | "RDNIS";
+type ReadStatusValues = "OK" | "ERROR" | "HANGUP" | "INTERRUPTED" | "SKIPPED" | "TIMEOUT"
 
 interface CalleridMethods {
   get: () => string;
@@ -24,6 +25,7 @@ declare namespace app {
   export const SayNumber: (num: number, gender: 'f' | 'm' | 'c') => void;
   export const SayAlpha: (str: string) => void;
   export const SayPhonetic: (str: string) => void;
+  export const read: (varName: string, fileName: string, maxDigits?: number, options?: string, attempts?: number, timeout?: number) => void
 
 }
 
@@ -36,4 +38,5 @@ declare namespace channel {
   export const CALLERID: (type: CallerIdDataTypes) => CalleridMethods;
   export const EXTEN: { get: () => string };
   export const PJSIP_HEADER: (a: string, b: string) => CalleridMethods;
+  export const READSTATUS: { get: () => ReadStatusValues }
 }
