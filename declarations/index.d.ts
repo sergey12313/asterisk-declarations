@@ -1,6 +1,7 @@
 /** @noSelfInFile */
 type CallerIdDataTypes = "name" | "num" | "all" | "ANI" | "DNIS" | "RDNIS";
 type ReadStatusValues = "OK" | "ERROR" | "HANGUP" | "INTERRUPTED" | "SKIPPED" | "TIMEOUT"
+type DialStatusValues = "CANCEL" | "ANSWER" | "NOANSWER" | "BUSY" | "CONGESTION" | "CHANUNAVAIL"
 
 interface CalleridMethods {
   get: () => string;
@@ -41,4 +42,5 @@ declare namespace channel {
   export const READSTATUS: { get: () => ReadStatusValues };
   export const UNIQUEID: { get: () => string };
   export const MONITOR_FILENAME: { set: (str: string ) => void }
+  export const DIALSTATUS: { get: () => DialStatusValues };
 }
