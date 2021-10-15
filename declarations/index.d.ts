@@ -26,7 +26,7 @@ declare namespace app {
   export const SayNumber: (num: number, gender: 'f' | 'm' | 'c') => void;
   export const SayAlpha: (str: string) => void;
   export const SayPhonetic: (str: string) => void;
-  export const MixMonitor: (str: string, options: string, command: string) => void;
+  export const MixMonitor: (str: string, options?: string, command?: string) => void;
   export const read: (varName: string, fileName: string, maxDigits?: number, options?: string, attempts?: number, timeout?: number) => void
 
 }
