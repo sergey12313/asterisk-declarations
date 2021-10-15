@@ -38,5 +38,6 @@ declare namespace channel {
   export const CALLERID: (type: CallerIdDataTypes) => CalleridMethods;
   export const EXTEN: { get: () => string };
   export const PJSIP_HEADER: (a: string, b: string) => CalleridMethods;
-  export const READSTATUS: { get: () => ReadStatusValues }
+  export const READSTATUS: { get: () => ReadStatusValues };
+  export const MONITOR_FILENAME: { set: (str: string ) => void }
 }
