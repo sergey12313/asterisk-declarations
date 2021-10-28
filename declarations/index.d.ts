@@ -12,6 +12,8 @@ declare namespace app {
   export function dial(str: string): void;
   export function playback(str: string): void;
   export const hangup: () => void;
+  export const record: (name: string, sillence: number, maxDuration: number, opt: string) => void;
+  export const ringing: () => void;
   export const set: (str: string) => void;
   export const answer: () => void;
   export const musiconhold: (str?: string) => void;
