@@ -30,7 +30,9 @@ declare namespace app {
   export const SayPhonetic: (str: string) => void;
   export const MixMonitor: (str: string, options?: string, command?: string) => void;
   export const read: (varName: string, fileName: string, maxDigits?: number, options?: string, attempts?: number, timeout?: number) => void
-
+  export const system: (command: string) => void;
+  export const exec: (command: string) => void;
+  export const DumpChan: () => void
 }
 
 type ExtensionType = {
@@ -44,6 +46,6 @@ declare namespace channel {
   export const PJSIP_HEADER: (a: string, b: string) => CalleridMethods;
   export const READSTATUS: { get: () => ReadStatusValues };
   export const UNIQUEID: { get: () => string };
-  export const MONITOR_FILENAME: { set: (str: string ) => void }
+  export const MONITOR_FILENAME: { set: (str: string) => void }
   export const DIALSTATUS: { get: () => DialStatusValues };
 }
