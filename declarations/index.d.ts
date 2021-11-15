@@ -32,6 +32,7 @@ declare namespace app {
   export const read: (varName: string, fileName: string, maxDigits?: number, options?: string, attempts?: number, timeout?: number) => void
   export const system: (command: string) => void;
   export const exec: (command: string) => void;
+  export const agi: (command: string, ...arg: string[]) => void;
   export const DumpChan: () => void
 }
 
